@@ -67,7 +67,6 @@
       background: radial-gradient(ellipse at center, rgba(65, 107, 60, .24), transparent 65%);
     }
     .hero-inner { padding: 64px 0 76px; }
-    .logo { width: min(260px, 65vw); margin: 0 auto 26px; filter: drop-shadow(0 12px 35px rgba(0,0,0,.55)); }
     .eyebrow {
       color: var(--gold); text-transform: uppercase; letter-spacing: .22em;
       font-size: .78rem; font-weight: 800;
@@ -89,19 +88,13 @@
     .section-head { max-width: 700px; margin: 0 auto 38px; text-align: center; }
     .section-head h2 { margin: 8px 0 12px; font-size: clamp(2rem, 4vw, 3.25rem); line-height: 1.1; letter-spacing: -.035em; }
     .section-head p { margin: 0; color: var(--muted); }
-    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: stretch; }
+    .about-grid { display: grid; grid-template-columns: 1fr; gap: 24px; align-items: stretch; }
     .panel {
       background: linear-gradient(145deg, var(--panel-soft), var(--panel));
       border: 1px solid var(--line); border-radius: 22px; padding: clamp(24px, 4vw, 42px);
     }
     .panel h3 { margin: 0 0 12px; font-size: 1.35rem; }
     .panel p { color: var(--muted); margin: 0; }
-    .artwork { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .artwork figure { margin: 0; min-width: 0; }
-    .artwork img {
-      width: 100%; height: 100%; max-height: 360px; object-fit: contain;
-      background: #0c0e0b; border: 1px solid var(--line); border-radius: 18px; padding: 8px;
-    }
 
     .music { background: linear-gradient(180deg, #151a13, #10130f); border-block: 1px solid var(--line); }
     .release-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
@@ -145,7 +138,6 @@
       nav a { white-space: nowrap; }
       .hero { min-height: 540px; }
       section { padding: 64px 0; }
-      .about-grid { grid-template-columns: 1fr; }
       .release-list { grid-template-columns: repeat(2, 1fr); }
       .links-grid { grid-template-columns: repeat(2, 1fr); }
     }
@@ -153,7 +145,6 @@
       .wrap { width: min(var(--width), calc(100% - 28px)); }
       .release-list, .links-grid { grid-template-columns: 1fr; }
       .release { min-height: auto; }
-      .artwork { gap: 10px; }
       .panel { border-radius: 16px; }
       .footer-inner { flex-direction: column; }
     }
@@ -179,8 +170,6 @@
   <main>
     <header class="hero" id="accueil">
       <div class="wrap hero-inner">
-        <img class="logo" src="lionrond.png" alt="Logo Magical Mystic">
-        <div class="eyebrow">Duo reggae · Jim &amp; Mika Barba</div>
         <h1>Magical Mystic</h1>
         <p>100% Reggae</p>
         <div class="actions">
@@ -202,10 +191,6 @@
             <h3>Musique &amp; paroles</h3>
             <p>Les chansons de Magical Mystic sont écrites et composées par Jim et Mika Barba. Retrouvez les titres du duo sur les plateformes et suivez ses actualités sur les réseaux.</p>
           </article>
-          <div class="artwork" aria-label="Visuels Magical Mystic">
-            <figure><img src="lion1.png" alt="Visuel artistique Magical Mystic, lion" loading="lazy"></figure>
-            <figure><img src="lion2.png" alt="Autre visuel artistique Magical Mystic, lion" loading="lazy"></figure>
-          </div>
         </div>
       </div>
     </section>
