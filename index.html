@@ -70,8 +70,13 @@
       color: var(--gold); text-transform: uppercase; letter-spacing: .22em;
       font-size: .78rem; font-weight: 800;
     }
-    h1 { font-size: clamp(2.8rem, 8vw, 6.2rem); line-height: .98; letter-spacing: -.055em; margin: 12px 0 20px; }
+    h1 { font-size: clamp(2.8rem, 8vw, 6.2rem); line-height: .98; letter-spacing: -.055em; margin: 12px 0 8px; }
+    .hero-tagline { margin: 0 0 22px; color: var(--gold); font-size: clamp(1.15rem, 3vw, 1.65rem); font-weight: 800; letter-spacing: .08em; }
     .hero p { max-width: 760px; margin: 0 auto; color: #e1e2d8; font-size: clamp(1rem, 2.3vw, 1.25rem); }
+    .hero-socials { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 18px; margin-top: 26px; }
+    .hero-socials a { display: inline-flex; align-items: center; justify-content: center; width: 38px; height: 38px; border-radius: 9px; transition: transform .18s ease, opacity .18s ease; }
+    .hero-socials a:hover { transform: translateY(-3px); opacity: .8; }
+    .hero-socials img { width: 30px; height: 30px; object-fit: contain; }
     .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 30px; }
     .button {
       display: inline-flex; justify-content: center; align-items: center; gap: 8px;
@@ -169,7 +174,15 @@
     <header class="hero" id="accueil">
       <div class="wrap hero-inner">
         <h1>Magical Mystic</h1>
-        <p class="hero-description">Magical Mystic, c'est Jim et Mika — père et fils réunis sur scène par le reggae et le même amour des mots. Un reggae potion magique porté par la voix de Mika et la guitare de Jim.</p>
+        <div class="hero-tagline">100% reggae</div>
+        <p class="hero-description">Magical Mystic, c'est Jim et Mika, père et fils réunis sur scène par le reggae et le même amour des mots.<br>Un reggae potion magique porté par la voix de Mika et la guitare de Jim.</p>
+        <div class="hero-socials" aria-label="Retrouvez Magical Mystic en ligne">
+          <a href="https://open.spotify.com/artist/4bKffgEBbvtgwc6UkqAmMz" target="_blank" rel="noopener noreferrer" aria-label="Spotify"><img src="https://cdn.simpleicons.org/spotify/1DB954" alt="Spotify"></a>
+          <a href="https://www.deezer.com/fr/artist/114629822" target="_blank" rel="noopener noreferrer" aria-label="Deezer"><img src="https://cdn.simpleicons.org/deezer/F5F2E8" alt="Deezer"></a>
+          <a href="https://www.facebook.com/magicalmysticreggae" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="https://cdn.simpleicons.org/facebook/1877F2" alt="Facebook"></a>
+          <a href="https://www.instagram.com/magical_mystic_/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram"></a>
+          <a href="https://www.youtube.com/channel/UCgoUjdxY0mq75tupz0Bn81Q" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="https://cdn.simpleicons.org/youtube/FF0000" alt="YouTube"></a>
+        </div>
         <div class="actions">
           <a class="button" href="#musique">Écouter la musique <span aria-hidden="true">↗</span></a>
           <a class="button secondary" href="#booking">Booking &amp; contact</a>
