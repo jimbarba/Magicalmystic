@@ -60,7 +60,6 @@
         linear-gradient(180deg, rgba(10, 13, 10, .45), rgba(10, 13, 10, .92)),
         url('fondbig.png') center / cover,
         var(--bg);
-      border-bottom: 1px solid var(--line);
     }
     .hero::before {
       content: ""; position: absolute; inset: 0; z-index: -1;
@@ -72,7 +71,7 @@
       font-size: .78rem; font-weight: 800;
     }
     h1 { font-size: clamp(2.8rem, 8vw, 6.2rem); line-height: .98; letter-spacing: -.055em; margin: 12px 0 20px; }
-    .hero p { max-width: 620px; margin: 0 auto; color: #e1e2d8; font-size: clamp(1rem, 2.3vw, 1.25rem); }
+    .hero p { max-width: 760px; margin: 0 auto; color: #e1e2d8; font-size: clamp(1rem, 2.3vw, 1.25rem); }
     .actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 30px; }
     .button {
       display: inline-flex; justify-content: center; align-items: center; gap: 8px;
@@ -96,7 +95,7 @@
     .panel h3 { margin: 0 0 12px; font-size: 1.35rem; }
     .panel p { color: var(--muted); margin: 0; }
 
-    .music { background: linear-gradient(180deg, #151a13, #10130f); border-block: 1px solid var(--line); }
+    .music { background: transparent; }
     .release-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
     .release {
       min-height: 132px; display: flex; align-items: center; gap: 16px;
@@ -124,7 +123,7 @@
     .booking {
       position: relative; overflow: hidden; text-align: center;
       background: linear-gradient(120deg, rgba(65,107,60,.3), rgba(166,61,53,.13)), var(--panel);
-      border-block: 1px solid var(--line);
+      background: transparent;
     }
     .booking .section-head { margin-bottom: 26px; }
     .booking-note { color: var(--muted); margin: 0 auto 28px; }
@@ -159,7 +158,6 @@
     <div class="wrap nav">
       <a class="wordmark" href="#accueil" aria-label="Magical Mystic, accueil">MAGICAL <span>MYSTIC</span></a>
       <nav aria-label="Navigation principale">
-        <a href="#groupe">Le duo</a>
         <a href="#musique">Musique</a>
         <a href="#reseaux">Réseaux</a>
         <a href="#booking">Booking</a>
@@ -171,7 +169,7 @@
     <header class="hero" id="accueil">
       <div class="wrap hero-inner">
         <h1>Magical Mystic</h1>
-        <p>100% Reggae</p>
+        <p class="hero-description">Magical Mystic, c'est Jim et Mika — père et fils réunis sur scène par le reggae et le même amour des mots. Un reggae potion magique porté par la voix de Mika et la guitare de Jim.</p>
         <div class="actions">
           <a class="button" href="#musique">Écouter la musique <span aria-hidden="true">↗</span></a>
           <a class="button secondary" href="#booking">Booking &amp; contact</a>
@@ -179,21 +177,6 @@
       </div>
     </header>
 
-    <section id="groupe">
-      <div class="wrap">
-        <div class="section-head">
-          <div class="eyebrow">L'univers du groupe</div>
-          <h2>Deux voix, une même vibration</h2>
-          <p>Magical Mystic, c'est Jim et Mika — père et fils réunis sur scène par le reggae et le même amour des mots. Un reggae potion magique porté par la voix de Mika et la guitare de Jim.</p>
-        </div>
-        <div class="about-grid">
-          <article class="panel">
-            <h3>Musique &amp; paroles</h3>
-            <p>Les chansons de Magical Mystic sont écrites et composées par Jim et Mika Barba. Retrouvez les titres du duo sur les plateformes et suivez ses actualités sur les réseaux.</p>
-          </article>
-        </div>
-      </div>
-    </section>
 
     <section class="music" id="musique">
       <div class="wrap">
